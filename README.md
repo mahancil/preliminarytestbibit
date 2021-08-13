@@ -1,4 +1,4 @@
------------------------- Semua soal test beserta source code yang saya kerjakan ada di branch master ----------------------
+------------------------ Semua soal test beserta source code yang saya kerjakan ada di branch master --------------------
 
 ===========================================================================
 - Soal No 1 ada di file sqlqueryno1.txt
