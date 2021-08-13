@@ -1,0 +1,7 @@
+select 
+    a.ID, 
+    a.Username, 
+    b.Username as ParentUserName 
+from 
+    USER a left join USER b on a.Parent = a.ID
+order by a.Username
