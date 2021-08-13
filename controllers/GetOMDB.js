@@ -65,3 +65,42 @@ exports.searchOMDBById = async function (req, res) {
         res.status(200).json(JSON.parse(hit_api))
     }    
 }
+
+var sortAlphabets = function(text) {
+    return text.split('').sort().join('');
+};
+
+exports.anagram = async function (req, res) {
+
+    let anagram = req.body.listWords
+
+    var anagram_result = [];
+    var result = [];
+
+    for (let i = 0; i<anagram.length; i++) {
+        var word = anagram[i];
+
+        var sorted = sortAlphabets(word);
+
+        if (anagram_result[sorted] != null) {
+            anagram_result[sorted].push(word);
+        } 
+        else {
+            anagram_result[sorted] = [ word ];
+        }
+    }
+    for (var i in anagram_result) {
+        result.push(anagram_result[i])
+    }
+    res.json(result) 
+}
+
+exports.findFirstStringInBracket = async function (req, res) {
+    var str = req.query.word
+    let result = str.substring(
+        str.indexOf("(") + 1, 
+        str.indexOf(")")
+    )
+    res.json(result) 
+}
+

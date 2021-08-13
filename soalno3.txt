@@ -1,0 +1,7 @@
+function findFirstStringInBracket(str){
+    let result = str.substring(
+        str.indexOf("(") + 1, 
+        str.indexOf(")")
+    )
+    return result
+}
