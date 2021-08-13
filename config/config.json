@@ -5,7 +5,12 @@
     "database": "dd3imfkcqk6v1m",
     "host": "ec2-3-233-100-43.compute-1.amazonaws.com",
     "port":"5432",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+          "rejectUnauthorized": false
+      }
+  }
   },
   "test": {
     "username": "wutfotafpwwrbt",
@@ -13,7 +18,12 @@
     "database": "dd3imfkcqk6v1m",
     "host": "ec2-3-233-100-43.compute-1.amazonaws.com",
     "port":"5432",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+          "rejectUnauthorized": false
+      }
+  }
   },
   "production": {
     "username": "wutfotafpwwrbt",
@@ -21,6 +31,11 @@
     "database": "dd3imfkcqk6v1m",
     "host": "ec2-3-233-100-43.compute-1.amazonaws.com",
     "port":"5432",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+          "rejectUnauthorized": false
+      }
+  }
   }
 }
