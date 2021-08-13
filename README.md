@@ -7,7 +7,7 @@
 - Soal no 3 ada di file soalno3.txt dan bisa diakses di https://preliminarytestno2.herokuapp.com/preliminarytestno2/api/v1/anagram dengan payload {"listWords":[]}
 - Soal no 4 ada di file soalno4.txt dan bisa diakses di https://preliminarytestno2.herokuapp.com/preliminarytestno2/api/v1/bracketfind?word=[param]
 
-=============================================================================
+===========================================================================
 
 =========== Explanation =====================================================
 
