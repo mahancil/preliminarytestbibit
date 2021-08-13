@@ -1,5 +1,5 @@
 var request = require('request-promise');
-var omdb_model = require('../models/OMDBmodel');
+var omdb_model = require('../models/custom_models/OMDBmodel');
 
 callOMDB = async function (params, method) {
 
@@ -26,7 +26,8 @@ exports.searchOMDB = async function (req, res) {
     let page = req.query.page;
     let req_url = req.path;
 
-    omdb_model.searchMovieLog({api_key: api_key, keyword: keyword, page: page, req_url: req_url})
+    // omdb_model.searchMovieLogPost({api_key: api_key, keyword: keyword, page: page, req_url: req_url})
+    omdb_model.searchMovieLogPostgre({api_key: api_key, keyword: keyword, page: page, req_url: req_url})
 
     hit_api = await callOMDB('?apikey='+api_key+'&s='+keyword+'&page='+page, 'GET')
     if(hit_api.error)
@@ -48,7 +49,8 @@ exports.searchOMDBById = async function (req, res) {
     let req_url = req.path;
     let movie_id = req.query.i;
 
-    omdb_model.searchMovieLog({api_key: api_key, req_url: req_url, movie_id: movie_id})
+    // omdb_model.searchMovieLog({api_key: api_key, req_url: req_url, movie_id: movie_id})    
+    omdb_model.searchMovieLogPostgre({api_key: api_key, req_url: req_url, movie_id: movie_id})
 
     hit_api = await callOMDB('?apikey='+api_key+'&i='+movie_id, 'GET')
     if(hit_api.error)

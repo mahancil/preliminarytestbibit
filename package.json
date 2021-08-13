@@ -14,8 +14,12 @@
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.12",
+    "pg": "^8.7.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "sequelize": "^6.6.5"
+    "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }
