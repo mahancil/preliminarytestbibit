@@ -3,7 +3,7 @@
 ===========================================================================
 - Soal No 1 ada di file sqlqueryno1.txt
 - Soal no 2 sudah saya kerjakan dan bisa diakses di https://preliminarytestno2.herokuapp.com/ dengan endpoint "preliminarytestno2/api/v1/detail?apikey=[param]&i=[param]" dan "preliminarytestno2/api/v1/search?apikey=[param]&s=[param]&page=[param]"
-- unit test untuk soal no 2 ada di file Unit_Test.docx
+- unit test untuk soal no 2 ada di file UNIT_TEST.docx
 - Soal no 3 ada di file soalno3.txt dan bisa diakses di https://preliminarytestno2.herokuapp.com/preliminarytestno2/api/v1/anagram dengan payload {"listWords":[]}
 - Soal no 4 ada di file soalno4.txt dan bisa diakses di https://preliminarytestno2.herokuapp.com/preliminarytestno2/api/v1/bracketfind?word=[param]
 
