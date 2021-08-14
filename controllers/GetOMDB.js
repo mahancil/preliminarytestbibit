@@ -92,7 +92,8 @@ exports.anagram = async function (req, res) {
     for (var i in anagram_result) {
         result.push(anagram_result[i])
     }
-    res.json(result) 
+    console.log(anagram_result)
+    res.json({anagram_result}) 
 }
 
 exports.findFirstStringInBracket = async function (req, res) {
